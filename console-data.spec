@@ -23,7 +23,7 @@ that used to be part of the console-tools.
 
 %description -l pl
 Ten pakiet zawiera pliki danych dla konsoli (czcionki, mapy
-klawiatury, róznorodne tablice), które kiedy¶ by³y czê¶ci±
+klawiatury, ró¿norodne tablice), które kiedy¶ by³y czê¶ci±
 console-tools.
 
 %prep
