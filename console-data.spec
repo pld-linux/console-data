@@ -42,5 +42,23 @@ rm -rf $RPM_BUILD_ROOT
 
 %{_datadir}/consolefonts
 %{_datadir}/consoletrans
-%{_datadir}/keymaps
 %{_datadir}/unidata
+
+%dir %{_datadir}/keymaps
+%{_datadir}/keymaps/include
+%ifarch m68k
+%{_datadir}/keymaps/amiga
+%{_datadir}/keymaps/atari
+%endif
+
+%ifarch %ix86
+%{_datadir}/keymaps/i386
+%endif
+
+%ifarch sparc sparc64
+%{_datadir}/keymaps/sun
+%endif
+
+%ifarch m68k ppc
+%{_datadir}/keymaps/mac
+%endif
