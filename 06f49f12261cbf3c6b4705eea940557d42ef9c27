@@ -1,0 +1,4 @@
+- corrected several glyphs in lat2u-16.psf (used by console-tools
+  as default console font); it should look better now
+- cosmetics
+- release 2
