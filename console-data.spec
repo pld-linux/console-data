@@ -25,7 +25,6 @@ console-tools.
 %setup -q
 
 %build
-LDFLAGS="-s"; export LDFLAGS
 %configure \
 	--with-main_compressor=gzip
 %{__make}
