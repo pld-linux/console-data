@@ -27,7 +27,7 @@ console-tools.
 %build
 aclocal
 autoconf
-automake -a -c
+automake -a -c -f
 %configure \
 	--with-main_compressor=gzip
 %{__make}
