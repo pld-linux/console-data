@@ -6,8 +6,11 @@ Release:	4
 License:	GPL
 Group:		Applications/Console
 Source0:	%{name}-%{version}.tar.gz
+# Source0-md5:	b534787af0edaa73f608f518263f9334
 Source1:	lat2u-16.psf.gz
+# Source1-md5:	dc90a9bcff858175beea32a9b3bebb33
 Source2:	lat2u.sfm.gz
+# Source2-md5:	8ac4abc169fa1236fc3e64163c043113
 URL:		http://lct.sourceforge.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BuildRequires:	autoconf
