@@ -32,14 +32,14 @@ rm -rf $RPM_BUILD_ROOT
 
 make install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf doc/{fonts/*,keymaps/*} README.*
+gzip -9nf doc/{fonts/*,keymaps/*,README*} 
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc doc/{fonts,keymaps} README.*
+%doc doc/{fonts,keymaps,README*} 
 
 /usr/share/consolefonts
 /usr/share/consoletrans
