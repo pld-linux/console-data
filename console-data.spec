@@ -12,9 +12,9 @@ Source1:	lat2u-16.psf.gz
 Source2:	lat2u.sfm.gz
 # Source2-md5:	8ac4abc169fa1236fc3e64163c043113
 URL:		http://lct.sourceforge.net/
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This package contains all data files (keymaps, fonts, misc tables)
@@ -40,7 +40,8 @@ rm -f missing
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 cp -f %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/consolefonts/
 cp -f %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/consoletrans/
