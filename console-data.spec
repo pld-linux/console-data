@@ -22,7 +22,7 @@ róznorodne tablice), które kiedy¶ by³y czê¶ci± console-tools.
 
 %build
 CFLAGS="$RPM_OPT_FLAGS" LDFLAGS="-s" \
-./configure %{_target} \
+./configure %{_target_platform} \
         --with-main_compressor=gzip
 
 make
