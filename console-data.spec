@@ -1,12 +1,13 @@
-Summary:        Linux console data
-Summary(pl):    Pliki danych dla konsoli
-Name:           console-data
-Version:        1999.08.29
-Release:        1
-Copyright:      GPL
-Group:          Utilities/Console
-Group(pl):      Narzêdzia/Konsola
-Source0:	http://www.multimania.com/ydirson/soft/lct/%{name}-%{version}.tar.gz
+Summary:	Linux console data
+Summary(pl):	Pliki danych dla konsoli
+Name:		console-data
+Version:	1999.08.29
+Release:	2
+License:	GPL
+Group:		Utilities/Console
+Group(pl):	Narzêdzia/Konsola
+Source0:	http://altern.org/ydirson/soft/lct/%{name}-%{version}.tar.gz
+Source1:	lat2u-16.psf.gz
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
@@ -23,13 +24,15 @@ róznorodne tablice), które kiedy¶ by³y czê¶ci± console-tools.
 %build
 LDFLAGS="-s"; export LDFLAGS
 %configure \
-        --with-main_compressor=gzip
+	--with-main_compressor=gzip
 make
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
 make install DESTDIR=$RPM_BUILD_ROOT
+
+cp -f %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/consolefonts/
 
 gzip -9nf doc/{fonts/*,keymaps/*,README*} 
 
