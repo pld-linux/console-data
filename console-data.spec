@@ -45,7 +45,3 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/consoletrans
 %{_datadir}/keymaps
 %{_datadir}/unidata
-
-%changelog
-* Thu Apr 22 1999 Piotr Czerwiñski <pius@pld.org.pl>
-- initial rpm release.
