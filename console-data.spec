@@ -14,7 +14,7 @@ This package contains all data files (keymaps, fonts, misc tables)
 that used to be part of the console-tools.
 
 %description -l pl
-Ten pakiet zawiera pliki danych dla konsoli (fonty, mapy klawiatury,
+Ten pakiet zawiera pliki danych dla konsoli (czcionki, mapy klawiatury,
 róznorodne tablice), które kiedy¶ by³y czê¶ci± console-tools.
 
 %prep
