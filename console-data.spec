@@ -9,7 +9,6 @@ Group(pl):	Narzêdzia/Konsola
 Source0:	http://altern.org/ydirson/soft/lct/%{name}-%{version}.tar.gz
 Source1:	lat2u-16.psf.gz
 Source2:	lat2u.sfm.gz
-BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
