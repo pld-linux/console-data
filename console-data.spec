@@ -47,5 +47,5 @@ rm -rf $RPM_BUILD_ROOT
 /usr/share/unidata
 
 %changelog
-* Thu 22 1999 Piotr Czerwiñski <pius@pld.org.pl>
+* Thu Apr 22 1999 Piotr Czerwiñski <pius@pld.org.pl>
 - initial rpm release.
