@@ -41,10 +41,10 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc doc/{fonts,keymaps,README*} 
 
-/usr/share/consolefonts
-/usr/share/consoletrans
-/usr/share/keymaps
-/usr/share/unidata
+%{_datadir}/consolefonts
+%{_datadir}/consoletrans
+%{_datadir}/keymaps
+%{_datadir}/unidata
 
 %changelog
 * Thu Apr 22 1999 Piotr Czerwiñski <pius@pld.org.pl>
