@@ -26,7 +26,8 @@ console-tools.
 %setup -q
 
 %build
-aclocal
+rm -f missing
+%{__aclocal}
 %{__autoconf}
 %{__automake}
 %configure \
