@@ -1,7 +1,7 @@
 Summary:        Linux console data
 Summary(pl):    Pliki danych dla konsoli
 Name:           console-data
-Version:        1999.04.15
+Version:        1999.08.29
 Release:        1
 Copyright:      GPL
 Group:          Utilities/Console
