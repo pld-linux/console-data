@@ -27,7 +27,7 @@ console-tools.
 LDFLAGS="-s"; export LDFLAGS
 %configure \
 	--with-main_compressor=gzip
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
