@@ -14,6 +14,7 @@ Source2:	lat2u.sfm.gz
 URL:		http://lct.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	gettext-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
