@@ -6,7 +6,7 @@ Release:        1
 Copyright:      GPL
 Group:          Utilities/Console
 Group(pl):      Narzêdzia/Konsola
-Source0:	ftp://sunsite.unc.edu/pub/Linux/system/keyboards/%{name}-%{version}.tar.gz
+Source0:	http://www.multimania.com/ydirson/soft/lct/%{name}-%{version}.tar.gz
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
