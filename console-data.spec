@@ -21,10 +21,9 @@ róznorodne tablice), które kiedy¶ by³y czê¶ci± console-tools.
 %setup -q
 
 %build
-CFLAGS="$RPM_OPT_FLAGS" LDFLAGS="-s" \
-./configure %{_target_platform} \
+LDFLAGS="-s"; export LDFLAGS
+%configure \
         --with-main_compressor=gzip
-
 make
 
 %install
