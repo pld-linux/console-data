@@ -8,6 +8,7 @@ Group:		Utilities/Console
 Group(pl):	Narzêdzia/Konsola
 Source0:	http://altern.org/ydirson/soft/lct/%{name}-%{version}.tar.gz
 Source1:	lat2u-16.psf.gz
+Source2:        lat2u.sfm.gz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -33,6 +34,7 @@ rm -rf $RPM_BUILD_ROOT
 make install DESTDIR=$RPM_BUILD_ROOT
 
 cp -f %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/consolefonts/
+cp -f %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/consoletrans/
 
 gzip -9nf doc/{fonts/*,keymaps/*,README*} 
 
