@@ -10,6 +10,8 @@ Source0:	http://altern.org/ydirson/soft/lct/%{name}-%{version}.tar.gz
 Source1:	lat2u-16.psf.gz
 Source2:	lat2u.sfm.gz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+BuildRequires:	autoconf
+BuildRequires:	automake
 
 %description
 This package contains all data files (keymaps, fonts, misc tables)
@@ -24,6 +26,9 @@ console-tools.
 %setup -q
 
 %build
+aclocal
+autoconf
+automake -a -c
 %configure \
 	--with-main_compressor=gzip
 %{__make}
