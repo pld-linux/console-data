@@ -5,8 +5,6 @@ Version:	1999.08.29
 Release:	4
 License:	GPL
 Group:		Applications/Console
-Group(de):	Applikationen/Konsole
-Group(pl):	Aplikacje/Konsola
 Source0:	http://altern.org/ydirson/soft/lct/%{name}-%{version}.tar.gz
 Source1:	lat2u-16.psf.gz
 Source2:	lat2u.sfm.gz
