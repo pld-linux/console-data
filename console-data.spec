@@ -5,9 +5,10 @@ Version:	1999.08.29
 Release:	4
 License:	GPL
 Group:		Applications/Console
-Source0:	http://altern.org/ydirson/soft/lct/%{name}-%{version}.tar.gz
+Source0:	%{name}-%{version}.tar.gz
 Source1:	lat2u-16.psf.gz
 Source2:	lat2u.sfm.gz
+URL:		http://lct.sourceforge.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -39,8 +40,6 @@ rm -rf $RPM_BUILD_ROOT
 
 cp -f %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/consolefonts/
 cp -f %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/consoletrans/
-
-gzip -9nf doc/{fonts/*,keymaps/*,README*}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
