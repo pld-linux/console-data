@@ -8,16 +8,17 @@ Group:		Utilities/Console
 Group(pl):	Narzêdzia/Konsola
 Source0:	http://altern.org/ydirson/soft/lct/%{name}-%{version}.tar.gz
 Source1:	lat2u-16.psf.gz
-Source2:        lat2u.sfm.gz
+Source2:	lat2u.sfm.gz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This package contains all data files (keymaps, fonts, misc tables) 
+This package contains all data files (keymaps, fonts, misc tables)
 that used to be part of the console-tools.
 
 %description -l pl
-Ten pakiet zawiera pliki danych dla konsoli (czcionki, mapy klawiatury,
-róznorodne tablice), które kiedy¶ by³y czê¶ci± console-tools.
+Ten pakiet zawiera pliki danych dla konsoli (czcionki, mapy
+klawiatury, róznorodne tablice), które kiedy¶ by³y czê¶ci±
+console-tools.
 
 %prep
 %setup -q
