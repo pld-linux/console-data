@@ -8,7 +8,7 @@ Group:		Utilities/Console
 Group(pl):	Narzêdzia/Konsola
 Source0:	http://altern.org/ydirson/soft/lct/%{name}-%{version}.tar.gz
 Source1:	lat2u-16.psf.gz
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This package contains all data files (keymaps, fonts, misc tables) 
