@@ -2,13 +2,14 @@ Summary:	Linux console data
 Summary(pl):	Pliki danych dla konsoli
 Name:		console-data
 Version:	1999.08.29
-Release:	3
+Release:	4
 License:	GPL
 Group:		Utilities/Console
 Group(pl):	Narzêdzia/Konsola
 Source0:	http://altern.org/ydirson/soft/lct/%{name}-%{version}.tar.gz
 Source1:	lat2u-16.psf.gz
 Source2:	lat2u.sfm.gz
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
