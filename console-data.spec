@@ -7,7 +7,7 @@ Copyright:      GPL
 Group:          Utilities/Console
 Group(pl):      Narzêdzia/Konsola
 Source0:	ftp://sunsite.unc.edu/pub/Linux/system/keyboards/%{name}-%{version}.tar.gz
-BuildRoot:      /tmp/%{name}-%{version}-root
+BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
 This package contains all data files (keymaps, fonts, misc tables) 
