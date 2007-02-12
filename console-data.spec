@@ -1,5 +1,5 @@
 Summary:	Linux console data
-Summary(pl.UTF-8):   Pliki danych dla konsoli
+Summary(pl.UTF-8):	Pliki danych dla konsoli
 Name:		console-data
 Version:	1999.08.29
 Release:	4
