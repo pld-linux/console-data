@@ -1,5 +1,5 @@
 Summary:	Linux console data
-Summary(pl):	Pliki danych dla konsoli
+Summary(pl.UTF-8):   Pliki danych dla konsoli
 Name:		console-data
 Version:	1999.08.29
 Release:	4
@@ -21,9 +21,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This package contains all data files (keymaps, fonts, misc tables)
 that used to be part of the console-tools.
 
-%description -l pl
+%description -l pl.UTF-8
 Ten pakiet zawiera pliki danych dla konsoli (czcionki, mapy
-klawiatury, ró¿norodne tablice), które kiedy¶ by³y czê¶ci±
+klawiatury, rÃ³Å¼norodne tablice), ktÃ³re kiedyÅ› byÅ‚y czÄ™Å›ciÄ…
 console-tools.
 
 %prep
